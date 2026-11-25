@@ -1,0 +1,35 @@
+# Secrets - never commit these
+.env
+*.env
+.env.*
+secrets.json
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large data / model files
+*.mp3
+*.wav
+*.m4a
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.pth
+models/
+data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
