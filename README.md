@@ -9,6 +9,7 @@ A collection of hands-on projects built with large language models (LLMs) and ot
 | # | Project | What it does | Stack |
 |---|---------|--------------|-------|
 | 1 | [Meeting Minutes Generator](./meeting-minutes-generator) | Turns a meeting audio recording into structured minutes (summary, discussion points, takeaways, action items) | Whisper, Llama 3.2, Hugging Face Transformers, 4-bit quantization |
+| 2 | [Website Brochure Generator](./website-brochure-generator) | Scrapes a company website, lets an LLM pick the relevant pages, and writes a marketing brochure | Gemini API, OpenAI SDK, BeautifulSoup, structured JSON output |
 
 More projects coming soon.
 
@@ -20,10 +21,14 @@ AI-LLM-Projects/
 ├── LICENSE
 ├── .gitignore
 ├── .gitattributes
-└── meeting-minutes-generator/   <- one folder per project
+├── meeting-minutes-generator/   <- one folder per project
+│   ├── README.md
+│   ├── requirements.txt
+│   └── Meeting_summary.ipynb
+└── website-brochure-generator/
     ├── README.md
     ├── requirements.txt
-    └── Meeting_summary.ipynb
+    └── Brochure.ipynb
 ```
 
 ## Getting started
@@ -43,7 +48,7 @@ Then follow the README inside the project folder. Most notebooks are designed fo
 
 ## Secrets and API keys
 
-Never commit API keys or tokens. Use Colab Secrets or a local `.env` file (already listed in `.gitignore`).
+Never commit API keys or tokens. Use Colab Secrets or a local `.env` file (already listed in `.gitignore`). Each project README says which secret it needs (`HF_TOKEN`, `GOOGLE_API_KEY`, ...).
 
 ## License
 

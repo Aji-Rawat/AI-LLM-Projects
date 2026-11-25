@@ -1,0 +1,5 @@
+# Only needed outside Google Colab (Colab already has these)
+openai
+beautifulsoup4
+requests
+ipython
